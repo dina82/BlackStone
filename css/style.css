@@ -111,7 +111,9 @@ p{
 }
 #header-navbar ul li:hover{
     background: rgba(248, 207, 44, 1);
-    color: rgba(20, 20, 20, 0.7)
+}
+#header-navbar ul li:hover a{
+    color: rgba(12, 12, 12, 1)
 }
 #header-navbar a{
     color: #fff;
