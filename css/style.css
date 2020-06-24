@@ -1,0 +1,130 @@
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "mainFont";
+    src: url("../fonts/ubuntu-l.eot");
+    src: url("../fonts/Ubuntu-Light.woff") format("woff"),
+    url("../fonts/Ubuntu-Light.ttf")
+}
+@font-face{
+    font-family: "headerFont";
+    src: url("../fonts/PathwayGothicOne-Regular.TTF");
+    src: url("../fonts/PathwayGothicOne-Regular.woff") format("woff"),
+    url("../fonts/PathwayGothicOne-Regular.ttf") format("ttf")
+}
+body{
+    font-size: 10px;
+    font-family: "mainFont"
+}
+a , a:hover , a:active , a:visited{
+    text-decoration: none
+}
+img{
+    width: 100%
+}
+h1{
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 40%;
+    font-size: 4rem;
+    position: relative;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: #fff;
+    font-family: "headerFont",sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 1.3rem
+}
+.line-above__header{
+    width: 6.5rem;
+    height: 0.8rem;
+    background: rgba(248, 207, 44, 1);
+    margin: 0rem auto 1.7rem;
+}
+.base-color{
+    color: rgba(248, 207, 44, 1)
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+    background: rgba(28, 28, 28, 0.6)
+}
+p{
+    color: #fff;
+    font-size: 1.2rem
+}
+.background-prop{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* start hero section */
+#hero-section{
+    background-image: url(../images/hero.jpg);
+    height: 100vh;
+}
+#hero-section .overlay{
+    padding: 10rem 0;
+}
+#hero-section p{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#hero-section img{
+    width: 15rem
+}
+/* end hero section */
+/* start section of about us */
+/* end section of about us */
+/* start section of mission and vission */
+#mission-vision .vision-content,
+.mission-content{
+    background-color: rgb(37, 40, 39);
+    padding: 3.45rem 0   ;
+    overflow: hidden;
+}
+.vision-image {
+    background-image: url(../images/vision.jpg)
+}
+.mission-image{
+    background-image: url(../images/mission.jpg);
+}
+/* end section of mission and vission */
+
+/* start navigationbar */
+#header-navbar{
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(20, 20, 20, 0.7)
+}
+#header-navbar ul li:hover{
+    background: rgba(248, 207, 44, 1);
+    color: rgba(20, 20, 20, 0.7)
+}
+#header-navbar a{
+    color: #fff;
+    font-size: 1.3rem
+}
+#navbar-button{
+    position: absolute;
+    z-index: 999;
+    right: 2rem;
+    top: 1rem;
+    font-size: 2.3rem;
+    color: #fff
+}
+#navbar-button i{
+}
+
