@@ -15,4 +15,9 @@ $(document).ready(function () {
     $('#navbar-button ').children().removeClass('fa-times ').addClass("fa-bars");
 
   })
+  $("#owl-demo").owlCarousel({
+    loop:true,
+    autoplay:true
+});
+  
 })

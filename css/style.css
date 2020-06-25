@@ -90,12 +90,10 @@ p{
     padding: 4rem 0
 }
 /* end hero section */
-/* start section of about us */
-/* end section of about us */
 /* start section of mission and vission */
 #mission-vision .vision-content,
 .mission-content{
-    background-color: rgb(37, 40, 39);
+    background-color: rgba(20, 20, 20);
     padding: 3.45rem 0   ;
     overflow: hidden;
 }
@@ -174,6 +172,14 @@ p{
     font-size: 1.1rem;
 }
 /* end what we provide section */
+/* start services section */
+#owl-demo h5{
+    font-weight: bold
+}
+#owl-demo p{
+    color: #000
+}
+/* end services section */
 /* start our client section */
 #our-client{
     background-image: url(../images/client3.jpg);
@@ -182,7 +188,7 @@ p{
     position: relative;
 }
 .our-client_images{
-    background: rgba(22, 22, 22, 0.53);
+    background: rgba(22, 22, 22, 0.64);
     width: fit-content;
     position: relative;
 }
