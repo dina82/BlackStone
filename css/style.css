@@ -76,11 +76,12 @@ p{
     height: 100vh;
 }
 #hero-section .overlay{
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 #hero-section p{
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-size: 1rem
 }
 #hero-section img{
     width: 15rem
@@ -159,11 +160,17 @@ p{
     background-size: cover;
     position: relative;
 }
-#our-client h2{
-    color: rgba(248, 207, 44, 1)
+.our-client_images{
+    background: rgba(22, 22, 22, 0.53);
+    width: fit-content;
+    margin: 8rem auto 0;
+    position: relative;
+}
+
+#our-client .overlay{
+    background: rgba(81, 81, 81, 0.42)
 }
 #our-client .client-logo{
-    background: rgba(138, 133, 131, 1);
     border: 1px solid rgba(248, 207, 44, 1);
     border-top: 0
 }
@@ -180,7 +187,6 @@ footer{
 }
 footer p{
     font-size: 1.1rem;
-
 }
 footer .about-us__footer img{
     width: 10rem
