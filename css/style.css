@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth
 }
 @font-face{
     font-family: "mainFont";
@@ -107,17 +108,39 @@ p{
     top: 0;
     bottom: 0;
     z-index: 999;
-    background-color: rgba(20, 20, 20, 0.7)
+    background-color: rgba(20, 20, 20, 0.7);
+    transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+.fade-out__navbar{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+#header-navbar a{
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
 }
 #header-navbar ul li:hover{
     background: rgba(248, 207, 44, 1);
 }
 #header-navbar ul li:hover a{
     color: rgba(12, 12, 12, 1)
-}
-#header-navbar a{
-    color: #fff;
-    font-size: 1.3rem
 }
 #navbar-button{
     position: absolute;
@@ -130,3 +153,63 @@ p{
 #navbar-button i{
 }
 
+/* start footer */
+footer{
+    background: rgba(20, 20, 20);
+    font-size: 1.1rem;
+    
+}
+footer p{
+    font-size: 1.1rem;
+
+}
+footer .about-us__footer img{
+    width: 10rem
+}
+.footer-links ul li i,
+.footer-links ul li svg{
+    color: rgba(248, 207, 44, 1)
+}
+.footer-links ul li{
+    color: #fff;
+    background: none;
+    border-color: rgb(44, 44, 44);
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+.footer-links ul li:hover{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+
+}
+footer h3{
+    color: #fff;
+    font-family: "headerFont",sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(248, 207, 44, 1)
+}
+footer .social-media a{
+    color: #fff;
+    background: rgb(36, 35, 35);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    margin-right: .3rem;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+footer .social-media a:hover{
+    background: rgba(248, 207, 44, 1)
+}
