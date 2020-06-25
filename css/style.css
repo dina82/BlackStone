@@ -152,7 +152,26 @@ p{
 }
 #navbar-button i{
 }
-
+/* start our client section */
+#our-client{
+    background-image: url(../images/client3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#our-client h2{
+    color: rgba(248, 207, 44, 1)
+}
+#our-client .client-logo{
+    background: rgba(138, 133, 131, 1);
+    border: 1px solid rgba(248, 207, 44, 1);
+    border-top: 0
+}
+#our-client .client-logo div{
+    border: 1px solid #fff;
+    margin: .3rem
+}
+/* end our client section */
 /* start footer */
 footer{
     background: rgba(20, 20, 20);
