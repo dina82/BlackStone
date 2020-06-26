@@ -60,7 +60,7 @@ h2{
     width: 100%;
     left: 0;
     top:0;
-    background: rgba(28, 28, 28, 0.6)
+    background: rgba(28, 28, 28, 0.4)
 }
 p{
     color: #fff;
@@ -73,6 +73,7 @@ p{
 /* start hero section */
 #hero-section{
     background-image: url(../images/hero.jpg);
+    position: relative;
     height: 100vh;
 }
 #hero-section .overlay{
@@ -111,11 +112,11 @@ p{
     bottom: 0;
     z-index: 999;
     background-color: rgba(20, 20, 20, 0.7);
-    transform: translateX(-400px);
-    -webkit-transform: translateX(-400px);
-    -moz-transform: translateX(-400px);
-    -ms-transform: translateX(-400px);
-    -o-transform: translateX(-400px);
+    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    -o-transform: translateX(-1000px);
     transition: all ease-in-out .5s;
     -webkit-transition: all ease-in-out .5s;
     -moz-transition: all ease-in-out .5s;
@@ -172,6 +173,44 @@ p{
     font-size: 1.1rem;
 }
 /* end what we provide section */
+/* strat portfolio section */
+#portofolio .portfolio-items{
+    overflow: hidden;
+}
+#portofolio .portfolio-items h5{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#portofolio .portfolio-items img,
+#portofolio .portfolio-items .overlay{
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+#portofolio .portfolio-items .overlay{
+    opacity: 0;
+    background: rgba(28, 28, 28, 0.55)
+}
+#portofolio .portfolio-items:hover .overlay{
+    opacity: 1;
+}
+#portofolio .portfolio-items:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* end portfolio section */
 /* start services section */
 #services_section,
 #our-team,
@@ -253,7 +292,7 @@ p{
     z-index: 2
 }
 #our-client .overlay{
-    background: rgba(81, 81, 81, 0.42)
+    /* background: rgba(81, 81, 81, 0.42) */
 }
 #our-client .client-logo{
     border: 1px solid rgba(248, 207, 44, 1);
