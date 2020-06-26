@@ -17,49 +17,30 @@ $(document).ready(function () {
   })
   $("#owl-demo").owlCarousel({
     loop:true,
-    autoplay:true
+    autoplay:true,
+    responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
 });
   // magnific popper
 
-// $('#manager-message').magnificPopup({
-//   items: [
-//     {
-//       src: './images/services/service2.jpg',
-//       title: 'Peter & Paul fortress in SPB'
-//     },
-//     {
-//       src: './images/services/service5.jpg',
-//       type: 'iframe' // this overrides default type
-//     },
-//     {
-//       src: $('<div class="white-popup">Dynamically created element</div>'), // Dynamically created element
-//       type: 'inline'
-//     },
-//     {
-//       src: '<div class="white-popup">Popup from HTML string</div>', // HTML string
-//       type: 'inline'
-//     }
-//   ],
-//   gallery: {
-//     enabled: true
-//   },
-//   type: 'image' // this is a default type
-// });
-$('#open-popup').magnificPopup({
-  items: [
-    {
-      src: './images/services/service2.jpg',
-      title: 'Peter & Paul fortress in SPB'
-    },
-    {
-      src: '<div class="white-popup">Dynamically created popup</div>',
-      type: 'inline'
-  }
-    
-  ],
-  gallery: {
-    enabled: true
-  },
-  type: 'image'
+
+
+
+$('.venobox').venobox({
+  // bgcolor: '',
+  // overlayColor: 'rgba(6, 12, 34, 0.85)',
+  // closeBackground: '',
+  // closeColor: '#fff'
+  frameheight:'100%',
+  framewidth:'100%'
 });
 })
