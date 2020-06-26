@@ -198,12 +198,17 @@ p{
 /* /* start section of mangar massege  * / */
 .mangar-info{
     position: relative;
+    overflow: hidden;
 }
 .mangar-name{
     position: absolute;
-    bottom: 0;
+    bottom: -2.5rem;
     width: 100%;
-    background: rgba(22, 22, 22, 0.43);
+    background: rgba(35, 35, 35, 0.5);
+    transition: all ease-in-out .3s;
+}
+.mangar-info:hover .mangar-name{
+    bottom: 0;
 }
 .mangar-name h5{
     text-transform: capitalize;
@@ -211,13 +216,28 @@ p{
     margin-top: .5rem;
     color: #fff;
     font-weight: bold;
-
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+.mangar-name h5:hover,
+.mangar-name a:hover svg{
+    color: rgb(248, 197, 0)
+}
+.mangar-name p:first-of-type{
+    margin-bottom: .5rem
+}
+.mangar-name svg{
+    color: #fff
 }
 /* end section of mangar massege  * /
 /* start our client section */
 
 #our-client{
-    background-image: url(../images/client3.jpg);
+    background-image: url(../images/clients/bgClient.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

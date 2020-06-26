@@ -1,1 +1,2 @@
 [0625/005049.388:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
+[0626/020817.802:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
