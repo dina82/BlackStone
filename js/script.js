@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    new WOW().init();
+
   // navbar
   $("#navbar-button").click(function () {
     $(this).parents().find("#header-navbar").css('transform', 'translateX(0px)');
@@ -15,6 +17,15 @@ $(document).ready(function () {
     $(this).parents().find("#header-navbar").css('transform', 'translateX(-400px)');
     $('#navbar-button ').children().removeClass('fa-times ').addClass("fa-bars");
 
+  })
+  // arrow to scroll top
+  $(Window).scroll(function(){
+    if( $(this).scrollTop() >300 ){
+      $("#arrow").fadeIn()
+    }else{$("#arrow").fadeOut()}
+  })
+  $("#arrow").click(function(){
+    $('html, body').animate({scrollTop:0},3000, "easeInOut")
   })
   // carousel
   $("#owl-demo").owlCarousel({
