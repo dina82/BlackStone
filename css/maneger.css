@@ -1,0 +1,21 @@
+/* managers */
+#hero-section{
+    background-image: url(../images/slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    height: 0;
+    padding: 15rem 0;
+
+}
+.massage-details h3{
+    font-weight: bold
+}
+.massage-details p{
+    color: #000
+}
+.massage-details h5{
+    font-size: 1.2rem;
+    font-weight: bold
+}

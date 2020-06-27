@@ -17,6 +17,15 @@
     src: url("../fonts/PathwayGothicOne-Regular.woff") format("woff"),
     url("../fonts/PathwayGothicOne-Regular.ttf") format("ttf")
 }
+.lb-data .lb-caption {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-top: .5rem;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: rgba(248, 207, 44, 1)
+}
 body{
     font-size: 10px;
     font-family: "mainFont"

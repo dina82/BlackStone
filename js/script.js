@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // navbar
   $("#navbar-button").click(function () {
     $(this).parents().find("#header-navbar").css('transform', 'translateX(0px)');
     if ( $('#navbar-button ').children().hasClass("fa-bars") ) {
@@ -15,6 +16,7 @@ $(document).ready(function () {
     $('#navbar-button ').children().removeClass('fa-times ').addClass("fa-bars");
 
   })
+  // carousel
   $("#owl-demo").owlCarousel({
     loop:true,
     autoplay:true,
@@ -31,16 +33,33 @@ $(document).ready(function () {
   }
 });
   // magnific popper
+  $('#manager-message').magnificPopup({
+    items: [
+      // { src: '<div class="col-md-6" style="color:#fff">HTML string</div>',
+      //  type: 'inline'},
+      {
+            src: '<div class="container-fluid"> <div class="row"> <div class="col-md-4"><img class="col-md-6" src="./images/mangars/manager1.PNG" alt"error"></div> <div class="col-md-4"><div style="color:#fff"> black stone is an awars-winning and dynamic project & cost management consultancy. providing a high quality. value for money, fully tailored service to clients across all sectors throughout the mena region and beyond</div></div></div></div>  '
+            ,type: 'inline'
+          }
 
-
-
-
-$('.venobox').venobox({
-  // bgcolor: '',
-  // overlayColor: 'rgba(6, 12, 34, 0.85)',
-  // closeBackground: '',
-  // closeColor: '#fff'
-  frameheight:'100%',
-  framewidth:'100%'
+    ],
+    gallery: {
+        enabled: true
+    },
+    type: 'ajax' // this is default type
 });
+
+lightbox.option({
+      'fadeDuration': 200,
+      // 'wrapAround': true
+      "imageFadeDuration":200,
+      "resizeDuration":300,
+      "disableScrolling":true,
+      "alwaysShowNavOnTouchDevices" :true
+      ,
+      "positionFromTop":175,
+      "showImageNumberLabel": false,
+      // "wrapAround" :true
+    })
+
 })
