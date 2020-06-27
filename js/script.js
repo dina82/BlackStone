@@ -63,3 +63,9 @@ lightbox.option({
     })
 
 })
+let x= document.getElementsByClassName("mangar-info")[0]
+x.addEventListener('click',manage)
+function manage(event){
+  console.log(event.target);
+  
+}
