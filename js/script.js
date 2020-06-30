@@ -57,7 +57,6 @@ $(document).ready(function () {
   $('#services-details #nav-tab a.nav-link').on('click',function(){
     $(this).addClass('link-visted').siblings().removeClass('link-visted')
   })
-  new WOW().init();
   
 })
 let x = document.getElementsByClassName("mangar-info")[0]

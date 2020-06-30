@@ -1,3 +1,6 @@
+body{
+    background: rgba(211, 211, 211, 0.27)
+}
 /* start hero section */
 #hero-service__section{
     background-image: url(../images/services/serv-2.jpg);
@@ -16,7 +19,6 @@
 }
 #hero-service__section .hero-section__content p{
     letter-spacing: .5rem;
-    color: #fff
 }
 /* end hero section */
 /* start service details section  */
@@ -55,8 +57,8 @@
     font-weight: bold;
     font-size: 1.3rem
 }
-p{
-    color: #565656
+.service-details__content p{
+    color: rgb(101, 101, 101)
 }
 .service-details__content li .dash-icon{
     margin-bottom: .5rem
