@@ -1,0 +1,68 @@
+/* start hero section */
+#hero-service__section{
+    background-image: url(../images/services/serv-2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    position: relative;
+}
+#hero-service__section .hero-section__content{
+    position: relative;
+    padding: 12rem 0 8rem
+}
+#hero-service__section .hero-section__content h1{
+    font-size: 2.5rem
+}
+#hero-service__section .hero-section__content p{
+    letter-spacing: .5rem;
+    color: #fff
+}
+/* end hero section */
+/* start service details section  */
+#services-details{
+    margin: 4rem 0
+}
+#services-details #nav-tab a{
+    font-size: 1.1rem;
+    color: #000;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    margin-top: .5rem;
+    padding: 1rem;
+    border: 1px solid rgb(222, 222, 222);
+    border-left: 5px solid rgba(248, 207, 44, 1);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    text-transform: capitalize
+}
+.link-visted,
+#services-details #nav-tab a:hover{
+    background: rgba(248, 207, 44, 1) !important; 
+    color: #fff !important;
+    border-left: 5px solid rgb(95, 95, 95) !important;
+
+}
+.service-details__content li h3{
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.3rem
+}
+p{
+    color: #565656
+}
+.service-details__content li .dash-icon{
+    margin-bottom: .5rem
+}
+.service-details__content li .dash-icon::before{
+    content: "-";
+    margin-right: .3rem;
+}
+/* end service details section  */

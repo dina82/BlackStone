@@ -79,6 +79,48 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* start navigationbar */
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(20, 20, 20, 0.7);
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+#header-navbar{
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    line-height: 55px
+}
+
+#header-navbar a{
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+
+#navbar-button{
+    position: absolute;
+    z-index: 999;
+    right: 2rem;
+    top: 1rem;
+    font-size: 2.3rem;
+    color: #fff
+}
+.nav-item.active{
+    border-bottom: 2px solid rgba(248, 207, 44, 1);
+}
 /* start hero section */
 #hero-section{
     background-image: url(../images/hero.jpg);
@@ -115,56 +157,6 @@ p{
 }
 /* end section of mission and vission */
 
-/* start navigationbar */
-#header-navbar{
-    top: 0;
-    bottom: 0;
-    z-index: 999;
-    background-color: rgba(20, 20, 20, 0.7);
-    transform: translateX(-1000px);
-    -webkit-transform: translateX(-1000px);
-    -moz-transform: translateX(-1000px);
-    -ms-transform: translateX(-1000px);
-    -o-transform: translateX(-1000px);
-    transition: all ease-in-out .5s;
-    -webkit-transition: all ease-in-out .5s;
-    -moz-transition: all ease-in-out .5s;
-    -ms-transition: all ease-in-out .5s;
-    -o-transition: all ease-in-out .5s;
-}
-.fade-out__navbar{
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
-}
-#header-navbar a{
-    color: #fff;
-    font-size: 1.3rem;
-    text-transform: capitalize;
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
-}
-#header-navbar ul li:hover{
-    background: rgba(248, 207, 44, 1);
-}
-#header-navbar ul li:hover a{
-    color: rgba(12, 12, 12, 1)
-}
-#navbar-button{
-    position: absolute;
-    z-index: 999;
-    right: 2rem;
-    top: 1rem;
-    font-size: 2.3rem;
-    color: #fff
-}
-#navbar-button i{
-}
 /* start what we provide section */
 .what-provide__section{
     background-image: url(../images/whatProvide.jpg);
@@ -390,4 +382,14 @@ footer .social-media a:hover{
 }
 #arrow:hover{
     background: rgb(194, 155, 6)
+}
+/* media query */
+@media (max-width : 1024px){
+    h1{
+        font-size: 2rem;
+    }
+    #lightboxOverlay,
+    .lightbox{
+        display: none !important
+    }
 }
