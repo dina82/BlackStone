@@ -147,20 +147,6 @@ header{
     padding: 4rem 0
 }
 /* end hero section */
-/* start section of mission and vission */
-#mission-vision .vision-content,
-.mission-content{
-    background-color: rgba(20, 20, 20);
-    padding: 3.45rem 0   ;
-    overflow: hidden;
-}
-.vision-image {
-    background-image: url(../images/vision.jpg)
-}
-.mission-image{
-    background-image: url(../images/mission.jpg);
-}
-/* end section of mission and vission */
 /* start service process section */
 .step__service-planning svg,
 .step__service-planning i{

@@ -17,8 +17,7 @@
     letter-spacing: .5rem;
 }
 /* end hero section */
-.about-us__content p{
-    /* background-image: url(../images/aboutUs/fac4ba8aa7099f38f09b47c096a99ddb.jpg); */
+ p{
 color: #000
 }
 .about-us__content span{
@@ -27,3 +26,14 @@ color: #000
     font-size: 1rem;
     text-transform: uppercase
 }
+/* start section of mission and vission */
+ .vision-content,
+.mission-content{
+    color: #000;
+    overflow: hidden;
+}
+.line-above__header{
+    margin: 0 0 1.7rem
+}
+
+/* end section of mission and vission */
