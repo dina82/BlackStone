@@ -1,0 +1,29 @@
+#hero-aboutUs__section{
+    background-image: url(../images/aboutUs/about.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    position: relative;
+}
+#hero-aboutUs__section .hero-section__content{
+    position: relative;
+    padding: 12rem 0 8rem
+}
+#hero-aboutUs__section .hero-section__content h1{
+    font-size: 2.5rem
+}
+#hero-aboutUs__section .hero-section__content p{
+    letter-spacing: .5rem;
+}
+/* end hero section */
+.about-us__content p{
+    /* background-image: url(../images/aboutUs/fac4ba8aa7099f38f09b47c096a99ddb.jpg); */
+color: #000
+}
+.about-us__content span{
+    font-weight: bold;
+    color: rgba(248, 207, 44, 1);
+    font-size: 1rem;
+    text-transform: uppercase
+}
