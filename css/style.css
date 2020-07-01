@@ -43,7 +43,7 @@ h1{
     text-transform: uppercase;
     font-weight: 600;
     width: 40%;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     letter-spacing: 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +70,7 @@ h2{
     width: 100%;
     left: 0;
     top:0;
-    background: rgba(28, 28, 28, 0.4)
+    background: rgba(28, 28, 28, 0.5)
 }
 p{
     color: #fff;
@@ -124,12 +124,16 @@ header{
 }
 /* start hero section */
 #hero-section{
-    background-image: url(../images/hero.jpg);
     position: relative;
     height: 100vh;
 }
+#hero-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
 #hero-section .overlay{
-    padding: 12rem 0;
+    padding: 16rem 0 ;
 }
 #hero-section p{
     font-weight: 600;
@@ -199,6 +203,7 @@ header{
 /* strat portfolio section */
 #portofolio .portfolio-items{
     overflow: hidden;
+    position: relative;
 }
 #portofolio .portfolio-items h5{
     color: #fff;
@@ -219,6 +224,15 @@ header{
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
+#portofolio .portfolio-items .overlay::before{
+    content: "";
+    position: absolute;
+    top: 15px ;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid rgba(248, 207, 44, 1)
+}
 #portofolio .portfolio-items .overlay{
     opacity: 0;
     background: rgba(28, 28, 28, 0.55)
@@ -232,6 +246,16 @@ header{
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+.latest-image:last-of-type {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover */
+}
+.latest-image:last-of-type img{
+    height: 100%;
+    object-fit: cover
 }
 /* end portfolio section */
 /* /* start section of mangar massege  * / */
@@ -276,13 +300,14 @@ header{
 /* start our client section */
 
 #our-client{
-    background-image: url(../images/clients/bgClient.jpg);
+    background-image: url(../images/clients/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 .our-client_images{
-    background: rgba(22, 22, 22, 0.64);
+    background: rgba(22, 22, 22, 0.8);
     width: fit-content;
     position: relative;
 }
