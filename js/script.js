@@ -59,6 +59,7 @@ $(document).ready(function () {
   })
   
 })
+var mixer = mixitup('.portfolio-list');
 let x = document.getElementsByClassName("mangar-info")[0]
 x.addEventListener('click', manage)
 function manage(event) {

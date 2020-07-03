@@ -36,7 +36,7 @@ body{
     margin-top: .5rem;
     padding: 1rem;
     border: 1px solid rgb(222, 222, 222);
-    border-left: 5px solid rgba(248, 207, 44, 1);
+    border-left: 5px solid rgb(249, 199, 2);
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -46,7 +46,7 @@ body{
 }
 .link-visted,
 #services-details #nav-tab a:hover{
-    background: rgba(248, 207, 44, 1) !important; 
+    background: rgb(249, 199, 2) !important; 
     color: #fff !important;
     border-left: 5px solid rgb(95, 95, 95) !important;
 
