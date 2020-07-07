@@ -18,29 +18,16 @@ $(document).ready(function () {
   // arrow to scroll top
   $(Window).scroll(function () {
     if ($(this).scrollTop() > 300) {
+      $('header').addClass('fixed-navbar');
       $("#arrow").fadeIn()
-    } else { $("#arrow").fadeOut() }
+    } else {
+      $('header').removeClass('fixed-navbar');
+       $("#arrow").fadeOut() 
+  }
   })
   $("#arrow").click(function () {
     $('html, body').animate({ scrollTop: 0 }, 3000, "easeInOut")
   })
-  // carousel
-  $("#owl-demo").owlCarousel({
-    loop: true,
-    autoplay: true,
-    responsive: {
-      100: {
-        items: 1
-      },
-      600: {
-        items: 1 
-      },
-      1000: {
-        items: 3
-      }
-    }
-  });
-
   lightbox.option({
     'fadeDuration': 200,
     // 'wrapAround': true
@@ -48,17 +35,14 @@ $(document).ready(function () {
     "resizeDuration": 300,
     "disableScrolling": true,
     "alwaysShowNavOnTouchDevices": true
-    ,
-    "positionFromTop": 175,
-    "showImageNumberLabel": false,
-    // "wrapAround" :true
   })
   // nav tab of service details
   $('#services-details #nav-tab a.nav-link').on('click',function(){
     $(this).addClass('link-visted').siblings().removeClass('link-visted')
   })
-  
+
 })
+// mixitup image gallary
 var mixer = mixitup('.portfolio-list');
 let x = document.getElementsByClassName("mangar-info")[0]
 x.addEventListener('click', manage)

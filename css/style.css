@@ -39,7 +39,6 @@ img{
 }
 h1{
     margin: auto;
-    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     width: 40%;
@@ -49,7 +48,6 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
-    color: #fff;
     font-family: "headerFont",sans-serif;
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -67,6 +65,14 @@ h2 span{
 .base-color{
     color: rgb(249, 199, 2)
 }
+.white-color,
+h1,
+h2,
+h6,
+p,
+#arrow{
+    color: #fff
+}
 .overlay{
     position: absolute;
     height: 100%;
@@ -76,12 +82,21 @@ h2 span{
     background: rgba(28, 28, 28, 0.6)
 }
 p{
-    color: #fff;
     font-size: 1.2rem
 }
 .background-prop{
     background-repeat: no-repeat;
     background-size: cover;
+}
+.items-transtion,
+#portofolio .portfolio-items img,
+#portofolio .portfolio-items .overlay,
+#header-navbar a {
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
 }
 /* start navigationbar */
 header{
@@ -90,11 +105,12 @@ header{
     right: 0;
     z-index: 999;
     background-color: rgba(20, 20, 20, 0.8);
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
+    position: absolute;
+    
+}
+.fixed-navbar{
+    position: fixed;
+    background: #000
 }
 #header-navbar{
     top: 0;
@@ -107,11 +123,6 @@ header{
     color: #fff;
     font-size: 1.1rem;
     text-transform: capitalize;
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
 }
 
 #navbar-button{
@@ -157,7 +168,6 @@ header{
 }
 .service-planning__content{
     background:rgba(0, 0, 0, 0.88);
-    color: #fff;
     width: 100%;
     height: 100%;
     padding: 1rem;
@@ -169,6 +179,8 @@ header{
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1.3rem;
+    text-transform: capitalize;
+    line-height: 1.8rem
 }
 /* end service process section */
 /* start what we provide section */
@@ -184,7 +196,6 @@ header{
     z-index: 2
 }
 .what-provide__content ul{
-    color: #fff;
     margin-left: 1.7rem;
     font-size: 1.1rem;
 }
@@ -195,8 +206,6 @@ header{
     position: relative;
 }
 #portofolio .portfolio-items h5{
-    color: #fff;
-    text-align: center;
     position: relative;
     top: 45%;
     font-weight: bold;
@@ -205,14 +214,7 @@ header{
     text-align: center;
     margin: auto;
 }
-#portofolio .portfolio-items img,
-#portofolio .portfolio-items .overlay{
-    transition: all ease-in-out .4s;
-    -webkit-transition: all ease-in-out .4s;
-    -moz-transition: all ease-in-out .4s;
-    -ms-transition: all ease-in-out .4s;
-    -o-transition: all ease-in-out .4s;
-}
+
 #portofolio .portfolio-items .overlay::before{
     content: "";
     position: absolute;
@@ -257,7 +259,6 @@ header{
     bottom: -2.5rem;
     width: 100%;
     background: rgba(35, 35, 35, 0.5);
-    transition: all ease-in-out .3s;
 }
 .mangar-info:hover .mangar-name{
     bottom: 0;
@@ -266,14 +267,8 @@ header{
     text-transform: capitalize;
     margin-bottom: 0;
     margin-top: .5rem;
-    color: #fff;
     font-weight: bold;
     cursor: pointer;
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
 }
 .mangar-name h5 a:hover,
 .mangar-name a:hover svg{
@@ -333,14 +328,8 @@ footer .about-us__footer img{
     color: rgb(249, 199, 2)
 }
 .footer-links ul li{
-    color: #fff;
     background: none;
     border-color: rgb(44, 44, 44);
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
 }
 .footer-links ul li:hover{
     transform: translateX(10px);
@@ -351,7 +340,6 @@ footer .about-us__footer img{
 
 }
 footer h3{
-    color: #fff;
     font-family: "headerFont",sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid rgb(249, 199, 2)
@@ -363,7 +351,6 @@ footer h3{
     font-size: 1.2rem;
 }
 footer .social-media a{
-    color: #fff;
     background: rgb(36, 35, 35);
     border-radius: 50%;
     height: 40px;
@@ -372,18 +359,17 @@ footer .social-media a{
     line-height: 40px;
     text-align: center;
     margin-right: .3rem;
-    transition: all ease-in-out .3s;
-    -webkit-transition: all ease-in-out .3s;
-    -moz-transition: all ease-in-out .3s;
-    -ms-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 footer .social-media a:hover{
-    background: rgb(248, 197, 0)
+    background: rgb(248, 197, 0);
+    color: #fff;
 }
 #arrow{
     font-size: 1.5rem;
-    color: #fff;
     background: rgb(248, 197, 0);
     display: block;
     width: 3rem;
@@ -394,11 +380,10 @@ footer .social-media a:hover{
     right: 1rem;
     bottom: 1rem;
     display: none;
-    transition: all ease-in-out .3s;
 
 }
 #arrow:hover{
-    background: rgb(194, 155, 6)
+    background: rgb(194, 155, 6);
 }
 /* media query */
 @media (max-width : 1024px){

@@ -3,7 +3,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-y: 50%; */
     position: relative;
 }
 #hero-aboutUs__section .hero-section__content{
@@ -15,7 +14,6 @@
 }
 #hero-aboutUs__section .hero-section__content p{
     letter-spacing: .5rem;
-    color: #fff
 }
 /* end hero section */
 h2{
@@ -36,7 +34,6 @@ section p{
     right: 15px;
     bottom: 15px;
     border: 4px solid rgb(249, 199, 2)
-
 }
 /* start section of mission and vission */
  .vision-content,
@@ -47,5 +44,4 @@ section p{
 .line-above__header{
     margin: 0 0 1.7rem
 }
-
 /* end section of mission and vission */

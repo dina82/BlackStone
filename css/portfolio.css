@@ -37,7 +37,7 @@ ul.portfolio-items li:hover{
     border: 2px solid rgb(249, 199, 2)
 
 }
-.overlay{
+#portfolio-section .overlay{
     opacity: 0;
     transition: all ease-in-out .3s;
     -webkit-transition: all ease-in-out .3s;
@@ -49,13 +49,11 @@ ul.portfolio-items li:hover{
     opacity: 1
 }
 h6{
-    color: #fff;
     text-align: center;
     position: relative;
     top: 45%;
     font-weight: bold;
     text-transform: capitalize;
     width: 50%;
-    text-align: center;
     margin: auto;
 }
