@@ -11,13 +11,14 @@ $(document).ready(function () {
       // $('#navbar-button ').children().removeClass('fa-times ').addClass("fa-bars");
     // }
   })
+
   $("#header-navbar ul li").on('click',function () {
     $(this).addClass('active').siblings().removeClass('active');
     
   })
   // arrow to scroll top
   $(Window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 500) {
       $('header').addClass('fixed-navbar');
       $("#arrow").fadeIn()
     } else {

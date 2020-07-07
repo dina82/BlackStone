@@ -106,7 +106,6 @@ header{
     z-index: 999;
     background-color: rgba(20, 20, 20, 0.8);
     position: absolute;
-    
 }
 .fixed-navbar{
     position: fixed;
@@ -121,10 +120,36 @@ header{
 
 #header-navbar a{
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: capitalize;
 }
+#header-navbar .dropitem .dropitemss{
+    display: none;
+    z-index: 1000;
+    top: 0;
+    position: absolute;
+    left: -100%;
+    background-color: rgba(20, 20, 20, 0.8);
+}
 
+#header-navbar .dropitem {
+    display: none;
+    top: 100%;
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+#header-navbar .dropitem a:hover{
+    background: none;
+    color: rgb(249, 199, 2)
+}
+#header-navbar .dropdown:hover .dropitem{
+    display: block
+}
+#header-navbar .dropdown .oo:hover .dropitemss{
+    display: block
+
+}
 #navbar-button{
     position: absolute;
     z-index: 999;
