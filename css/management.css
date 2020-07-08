@@ -13,6 +13,26 @@
 .hero-section__content{
     position: relative;
 }
+/* end hero section */
+/* start project management */
+.project-management__img{
+    position: relative;
+}
+.project-management__img::after{
+    content: "";
+    position: absolute;
+    border: 4px solid rgb(249, 199, 2);
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem
+}
+h2{
+    font-size: 2.5rem;
+    color: #000;
+}
+/* end project management */
+/* start cost management */
 p{
     color: rgb(101, 101, 101)    
 }
@@ -20,18 +40,6 @@ p{
     font-size: 2.5rem;
     color: rgb(249, 199, 2)
 }
-.content-icon{
-    position: relative;
-}
-/* .content-icon::after{
-    content: "";
-    border: 1px dashed rgba(20, 20, 20);
-    position: absolute;
-    top: -.7rem;
-    left: -.7rem;
-    right: -.7rem;
-    bottom: -.7rem
-} */
 h3{
     text-transform: capitalize;
     font-weight: bold;
@@ -47,4 +55,3 @@ h3{
     text-transform: uppercase;
     letter-spacing: 1px
 }
-    /* end hero section */
