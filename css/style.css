@@ -29,7 +29,7 @@
 body{
     font-size: 10px;
     font-family: "mainFont";
-    background: rgba(211, 211, 211, 0.27)
+    background: rgba(211, 211, 211, 0.27);
 }
 a , a:hover , a:active , a:visited{
     text-decoration: none
@@ -50,7 +50,7 @@ h1{
 h2{
     font-family: "headerFont",sans-serif;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1.3rem
 }
 h2 span{
@@ -186,6 +186,42 @@ header{
     padding: 4rem 0
 }
 /* end hero section */
+/* start about us */
+.about-us__image{
+    position: relative;
+}
+.about-us__content p{
+    color: rgb(101, 101, 101)
+}
+.about-us__image::after{
+    content: "";
+    position: absolute;
+    top: 15px ;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 4px solid rgb(249, 199, 2)
+}
+.read-more{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: bold;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.read-more:hover{
+    color: rgb(249, 199, 2);
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+/* end about us */
 /* start service process section */
 .step__service-planning svg,
 .step__service-planning i{
