@@ -8,10 +8,12 @@
     
 }
 /* start bsi-phlisiophy */
-#bsi-phlisiophy .line-above__header{
+.line-above__header{
     margin: 0 0 1.7rem
 }
-.design__content p{
+.design__content p,
+#design-service,
+#design-service p{
     color: rgb(101, 101, 101)
 }
 #why-blackstone{
@@ -110,3 +112,17 @@ h3{
     position: relative;
     top: -15px
  }
+ /* start design service */
+ h4{
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #000;
+     font-size: 1.2rem;
+ }
+ #design-service ul li{
+    font-size: .9rem;
+    margin-bottom: .2rem;
+ }
+.wrapper{
+    background: rgb(249, 199, 2)
+}
