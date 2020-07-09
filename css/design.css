@@ -1,0 +1,112 @@
+#design__hero-section{
+    background-image: url(../images/design/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12rem 0 8rem;
+    position: relative;
+    
+}
+/* start bsi-phlisiophy */
+#bsi-phlisiophy .line-above__header{
+    margin: 0 0 1.7rem
+}
+.design__content p{
+    color: rgb(101, 101, 101)
+}
+#why-blackstone{
+    background-image: url(../images/design/4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 12rem 0 8rem; */
+    position: relative;
+}
+#why-blackstone h2{
+    position: relative;
+}
+#why-blackstone li{
+    position: relative;
+}
+h3{
+    text-transform: capitalize
+}
+#why-blackstone li:last-of-type h3{
+    margin-top: 1.5rem
+}
+#why-blackstone li:not(:last-of-type)::after{
+    content: "";
+    background: #fff;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 1.3rem;
+
+}
+#why-blackstone li:first-of-type span::before{
+    transform: translate(-.3rem, .9rem);
+    -webkit-transform: translate(-.3rem, .9rem);
+    -moz-transform: translate(-.3rem, .9rem);
+    -ms-transform: translate(-.3rem, .9rem);
+    -o-transform: translate(-.3rem, .9rem);
+}
+#why-blackstone li:nth-of-type(2) span::before{
+    transform: translate(-.35rem, 1.3rem);
+    -webkit-transform: translate(-.35rem, 1.3rem);
+    -moz-transform: translate(-.35rem, 1.3rem);
+    -ms-transform: translate(-.35rem, 1.3rem);
+    -o-transform: translate(-.35rem, 1.3rem);
+}
+#why-blackstone li:last-of-type span::before{
+    transform: translate(-.35rem, 1.8rem);
+    -webkit-transform: translate(-.35rem, 1.8rem);
+    -moz-transform: translate(-.35rem, 1.8rem);
+    -ms-transform: translate(-.35rem, 1.8rem);
+    -o-transform: translate(-.35rem, 1.8rem);
+}
+#why-blackstone li span::before{
+    content: "";
+    width: .7rem;
+    height: .7rem;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#why-blackstone li span{
+    position: relative;
+    background: rgba(211, 212, 212, 0.33);
+    border: 1px solid #fff;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#why-blackstone li:first-of-type span{
+    width: 2.5rem;
+    height: 2.5rem;
+ }
+#why-blackstone li:nth-of-type(2) h3{
+    margin-top: .6rem
+}
+#why-blackstone li:last-of-type h3{
+    margin-top: -0.4rem;
+}
+#why-blackstone li:nth-of-type(2) span{
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -7px;
+    position: relative;
+ }
+#why-blackstone li:last-of-type span{
+    width: 4.5rem;
+    height: 4.5rem;
+    position: relative;
+    top: -15px
+ }
