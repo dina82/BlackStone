@@ -17,6 +17,11 @@
 /* start project management */
 .project-management__img{
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+.project-management__img img{
+    height: 100%;
 }
 .project-management__img::after{
     content: "";
