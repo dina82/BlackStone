@@ -30,6 +30,7 @@ body{
     font-size: 10px;
     font-family: "mainFont";
     background: rgba(211, 211, 211, 0.27);
+    color: rgb(101, 101, 101)
 }
 a , a:hover , a:active , a:visited{
     text-decoration: none
@@ -69,7 +70,7 @@ h2 span{
 h1,
 h2,
 h6,
-p,
+
 #arrow{
     color: #fff
 }
