@@ -98,6 +98,11 @@ p{
     -ms-transition: all ease-in-out .3s;
     -o-transition: all ease-in-out .3s;
 }
+.wrapper{
+    background: rgb(249, 199, 2);
+    letter-spacing: 1px;
+    padding: 2.5rem 0
+}
 /* start navigationbar */
 header{
     top: 0;
