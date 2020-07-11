@@ -1,14 +1,15 @@
-#hero-aboutUs__section{
+#hero-fitOut__section{
     position: relative;
-    padding: 12rem 0 8rem
+    padding: 12rem 0 8rem;
+    background-image: url(../images/interiorFitOut/gallery19.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%
 }
 #interior-construction ul{
     position: relative;
     display: flex;
     margin: 0 20%;
-}
-ul li{
-    /* text-align: center; */
 }
 #interior-construction li:not(:last-of-type)::after{
     background: red;
