@@ -63,20 +63,6 @@ h4{
     font-family: fontawesome;
     margin-right: 1rem
 }
-#repairing-maintenance__section img{
-    box-shadow: 6px 6px 11px rgba(204, 204, 204, 0.62)
-}
-#repairing-maintenance__section ul li{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    /* color: #000 */
-}
-#repairing-maintenance__section ul li i,
-#repairing-maintenance__section ul li svg{
-    font-size: 1.8rem;
-
-}
 /* end trunkey solution content */
 /*  */
 .interion-desgin{
@@ -94,5 +80,6 @@ h4{
 }
 .interion-desgin__content{
     position: relative;
-
+    
 }
+    
