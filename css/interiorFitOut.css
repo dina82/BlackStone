@@ -34,10 +34,10 @@ ul li{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     background: #000;
     margin: auto;
 }
@@ -63,4 +63,36 @@ h4{
     font-family: fontawesome;
     margin-right: 1rem
 }
+#repairing-maintenance__section img{
+    box-shadow: 6px 6px 11px rgba(204, 204, 204, 0.62)
+}
+#repairing-maintenance__section ul li{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    /* color: #000 */
+}
+#repairing-maintenance__section ul li i,
+#repairing-maintenance__section ul li svg{
+    font-size: 1.8rem;
+
+}
 /* end trunkey solution content */
+/*  */
+.interion-desgin{
+    background-image: url(../images/interiorFitOut/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.interion-desgin{
+    position: relative;
+}
+.interion-desgin ul li{
+    font-size: 1.2rem;
+    margin-bottom: 1rem
+}
+.interion-desgin__content{
+    position: relative;
+
+}
