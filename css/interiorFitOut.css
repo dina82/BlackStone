@@ -84,9 +84,6 @@ h4{
     
 }
     /*start repairing-maintenance__section   */
-    #repairing-maintenance__section img{
-        box-shadow: 6px 6px 11px rgba(204, 204, 204, 0.62)
-    }
     #repairing-maintenance__section ul li{
         font-size: 1rem;
         font-weight: bold;

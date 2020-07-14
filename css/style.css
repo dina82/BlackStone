@@ -149,9 +149,7 @@ header{
     background: none;
     color: rgb(249, 199, 2)
 }
-#header-navbar .dropdown:hover .dropitem{
-    display: block
-}
+
 #header-navbar .dropdown .oo:hover .dropitemss{
     display: block
 
@@ -171,6 +169,7 @@ header{
 #hero-section{
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 #hero-section video{
     width: 100%;
@@ -405,8 +404,12 @@ footer .about-us__footer img{
     -moz-transform: translateX(10px);
     -ms-transform: translateX(10px);
     -o-transform: translateX(10px);
-
+    
 }
+        footer a{
+            color: #fff;
+            text-transform: capitalize
+        }
 footer h3{
     font-family: "headerFont",sans-serif;
     text-transform: uppercase;
@@ -454,12 +457,30 @@ footer .social-media a:hover{
     background: rgb(194, 155, 6);
 }
 /* media query */
+@media (min-width : 1024px){
+    #header-navbar .dropdown:hover .dropitem{
+        display: block
+    }
+}
 @media (max-width : 1024px){
+    #header-navbar .nav-item.active{
+        border-bottom: none
+    }
+    #header-navbar .nav-item.active .dropitem{
+
+        display: block ;
+        position: relative ;
+        background: none 
+    }
+    #header-navbar {
+        height: 100vh;
+    }
     h1{
         font-size: 2rem;
+        width: 100%
     }
     #lightboxOverlay,
     .lightbox{
-        display: none !important
+        /* display: none !important */
     }
 }
