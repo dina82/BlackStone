@@ -27,6 +27,16 @@ ul.portfolio-items li:hover{
     margin: .5rem;
     position: relative;
 }
+.iso-image .mix {display:inline-block;
+    width:300px;
+}
+ .iso-image  img{
+     
+	  /* height:220px; */
+      /* margin: 10px */
+    }  
+    .grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
 #portfolio-section .mix .overlay::before{
     content: "";
     position: absolute;
